@@ -1,0 +1,371 @@
+/* ============================================================
+   Estilo Principal – Tema Azul e Vermelho
+   ============================================================ */
+
+/* ---------------------------
+   1. Variáveis de Cores
+   --------------------------- */
+:root {
+  --cor-primaria: #003f7f;    /* Azul escuro */
+  --cor-secundaria: #e60000;  /* Vermelho vivo */
+  --cor-fundo: #f5f5f5;       /* Cinza claro */
+  --cor-texto: #333333;       /* Cinza escuro para texto */
+  --cor-branco: #ffffff;
+  --cor-hover-btn: #00264d;     /* Azul ainda mais escuro para hover */
+  --cor-hover-btn-sec: #b30000; /* Vermelho mais escuro para hover */
+  --cor-borda: #cccccc;         /* Cinza claro para bordas */
+  --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------------------------
+   2. Reset e Base
+   --------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-base);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---------------------------
+   3. Cabeçalho e Navegação
+   --------------------------- */
+.header {
+  background-color: var(--cor-primaria);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo h1 {
+  color: var(--cor-branco);
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.logo h1:hover {
+  color: var(--cor-secundaria);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-item {
+  color: var(--cor-branco);
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-branco);
+}
+
+/* Ícone do menu para telas menores */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--cor-branco);
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* ---------------------------
+   4. Seção Hero
+   --------------------------- */
+.hero-section {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background: linear-gradient(
+    to bottom right,
+    var(--cor-primaria),
+    var(--cor-secundaria)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: var(--cor-branco);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero-content .btn {
+  font-size: 1rem;
+}
+
+/* ---------------------------
+   5. Botões (classe .btn)
+   --------------------------- */
+.btn {
+  display: inline-block;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-branco);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.btn:hover {
+  background-color: var(--cor-hover-btn-sec);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-secondary {
+  background-color: var(--cor-primaria);
+}
+
+.btn-secondary:hover {
+  background-color: var(--cor-hover-btn);
+}
+
+/* Botões pequenos dentro de tabelas */
+.btn-sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.875rem;
+}
+
+/* ---------------------------
+   6. Seções e Conteúdo Geral
+   --------------------------- */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.page-content {
+  background-color: var(--cor-branco);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--cor-primaria);
+  border-bottom: 4px solid var(--cor-secundaria);
+  padding-bottom: 0.5rem;
+}
+
+.text-block p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Tabelas */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--cor-borda);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.table th {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Formulários */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-box label {
+  font-weight: 500;
+}
+
+.form-box input,
+.form-box textarea,
+.form-box select {
+  padding: 0.5rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-box input:focus,
+.form-box textarea:focus,
+.form-box select:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+}
+
+.alert-error {
+  background-color: #ffe6e6;
+  color: #cc0000;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cc0000;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.alert-success {
+  background-color: #e6ffea;
+  color: #006600;
+  padding: 0.75rem 1rem;
+  border: 1px solid #006600;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* ---------------------------
+   7. Animações
+   --------------------------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------------------
+   8. Footer
+   --------------------------- */
+.footer {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+}
+
+/* ---------------------------
+   9. Responsividade
+   --------------------------- */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--cor-primaria);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    border-radius: 0 0 0 8px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-item {
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
