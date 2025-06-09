@@ -1,5 +1,5 @@
 # PI-SEGUNDO-SEMESTRE-GRUPO 1 
-![Logo da Empresa](Documentação/Conteúdo/Imagens/Logo.png)
+![Logo da Empresa](Documentação/Conteúdo/Imagens/logo_empresa.png)
 ---
 
 ## Índice
