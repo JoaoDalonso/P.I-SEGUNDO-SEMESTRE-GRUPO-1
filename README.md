@@ -1,7 +1,9 @@
 # PI-SEGUNDO-SEMESTRE-GRUPO 1 
+
 <p align="center">
-![Logo da Empresa]<img src="Documentação/Conteúdo/Imagens/logo_empresa.png" width="300">
+<img src="Documentação/Conteúdo/Imagens/logo_empresa.png" width="400">
 </p>
+
 
 ---
 
