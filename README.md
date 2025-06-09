@@ -13,10 +13,10 @@
 
 ## Integrantes
 
-* **[JOÃO JOSÉ DALONSO NEVES]** 
-* **[PATRICK EDUARDO BECK FRANZINI]** 
+* **[JOÃO JOSÉ DALONSO NEVES](https://github.com/JoaoDalonso)** 
+* **[PATRICK EDUARDO BECK FRANZINI](https://github.com/PatrickFranzini)** 
 * **[RAFAEL RENATO RITA]** 
-* **[VITOR HUGO PIMENTA DE ALMEIDA]** 
+* **[VITOR HUGO PIMENTA DE ALMEIDA](https://github.com/Vitor-Pimenta)** 
 
 ---
 
