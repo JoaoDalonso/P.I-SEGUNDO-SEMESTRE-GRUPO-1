@@ -20,7 +20,7 @@
 
 * **[JOÃO JOSÉ DALONSO NEVES](https://github.com/JoaoDalonso)** 
 * **[PATRICK EDUARDO BECK FRANZINI](https://github.com/PatrickFranzini)** 
-* **[RAFAEL RENATO RITA]** 
+* **[RAFAEL RENATO RITA](https://github.com/RafaelRRita)** 
 * **[VITOR HUGO PIMENTA DE ALMEIDA](https://github.com/Vitor-Pimenta)** 
 
 ---
