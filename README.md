@@ -49,4 +49,4 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 * **Sistema de Agendamento de Horário:** Exibe uma lista de todas as [Entidades] cadastradas, com opções de busca e filtros.
 * **Listagem de Horários já Agendados** Possibilita a modificação de informações de [Entidades] existentes.
 * **Edição de Agendamentos:** Permite remover [Entidades] do sistema.
-* **Exclusão de Agendamentos:** Descreva brevemente o que essa funcionalidade faz.
+* **Exclusão de Agendamentos:** Ferramenta de exclusão de agendamentos.
