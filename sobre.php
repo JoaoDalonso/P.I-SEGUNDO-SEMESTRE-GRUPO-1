@@ -1,0 +1,2 @@
+<?php include 'includes/header.php';?>
+<section class="content-page"><div class="container"><h2>Sobre Nós</h2><p>Somos a JC METAIS, excelência em montagens e soldagens.</p></div></section><?php include 'includes/footer.php';?>
