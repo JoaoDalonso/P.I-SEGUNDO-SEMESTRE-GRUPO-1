@@ -7,3 +7,4 @@ class ConfiguracaoBanco
     public const USUARIO    = 'root';
     public const SENHA      = 'root'; //<- lembra de tirar a senha cidadão//
 }
+

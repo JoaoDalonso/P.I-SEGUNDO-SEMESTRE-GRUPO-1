@@ -52,10 +52,13 @@ class Banco
     //getterzinho para receber o dado sem vazar o dado ainda mantendo ele como private//
     public function criarAgendamento($uid, $data, $hi)
     {
-        $stmt = $this->pdo->prepare(
-            'INSERT INTO agenda (usuario_id, data, horario_inicio) VALUES (:uid, :data, :hi)'
-        );
-        $stmt->execute(['uid'=>$uid,'data'=>$data,'hi'=>$hi]);
+    $sql = 'INSERT INTO agenda (usuario_id, data, horario_inicio) VALUES (:uid, :data, :hi)';
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute([
+        'uid' => $uid,
+        'data' => $data,
+        'hi' => $hi
+    ]);
     }
     //Quando é feito login o id do usuário é guardado dentro da sessão "$_SESSION['usuario_id']=$banco->getUsuarioId();" e puxado pelo getter, usando uid paraa puxar o id unico dos cookies e faz o resto do post//
     public function listarTodosAgendamentos()
